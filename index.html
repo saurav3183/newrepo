@@ -1,81 +1,59 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <title>Bootstrap Theme </title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <style>
-  body {
-    font: 20px Montserrat, sans-serif;
-    line-height: 1.8;
-    color: #f5f6f7;
-  }
-  p {font-size: 16px;}
-  .margin {margin-bottom: 45px;}
-  .bg-1 { 
-    background-color: #1abc9c; /* Green */
-    color: #ffffff;
-  }
-  .bg-2 { 
-    background-color: #474e5d; /* Dark Blue */
-    color: #ffffff;
-  }
-  .bg-3 { 
-    background-color: #ffffff; /* White */
-    color: #555555;
-  }
-  .bg-4 { 
-    background-color: #2f2f2f; /* Black Gray */
-    color: #fff;
-  }
-  .container-fluid {
-    padding-top: 70px;
-    padding-bottom: 70px;
-  }
-  .navbar {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border: 0;
-    border-radius: 0;
-    margin-bottom: 0;
-    font-size: 12px;
-    letter-spacing: 5px;
-  }
-  .navbar-nav  li a:hover {
-    color: #1abc9c !important;
-  }
-  </style>
-</head>
-<body>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- Navbar -->
-<nav class="navbar navbar-default">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">My Portfolio</a>
-    </div>
-    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>My Portfolio</title>
+  </head>
+  <body>
+ 
+    <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+ <!-- Navbar content -->
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Info</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Educational Background</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Number of courses completed</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
       </ul>
     </div>
   </div>
 </nav>
 
-<!-- First Container -->
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+
 <div class="container-fluid bg-1 text-center">
   <h3 class="margin">Hi, I'm Kumar Saurav</h3>
-  <img src="photo.png" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
+ <img src="photo.png" class="rounded-circle" alt="Bird" width="350" height="350">
   <h3>A computer science student passionate about programming and Web design.</h3>
 </div>
-
 <!-- Second Container -->
 <div class="container-fluid bg-2 text-center">
   <h3 class="margin">About me</h3>
@@ -85,32 +63,34 @@ I like to travel. I believe travelling gives you a new perspective to everything
  
 </div>
 
-<!-- Third Container (Grid) -->
-<div class="container-fluid bg-3 text-center">    
-  <h3 class="margin">Where To Find Me?</h3><br>
-  <div class="row">
-    <div class="col-sm-4">
-      <p>GitHub.</p>
-<a href="https://github.com/saurav3183">
-      <img src="git.png" class="img-responsive margin" style="width:100%" alt="Image">
-</a>
+<div class="card-group">
+  <div class="card">
+    <img src="https://source.unsplash.com/1600x900/?github" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">GITHUB</h5>
+      <p class="card-text">Check out My github account</p>
+      
+ <a href="https://github.com/saurav3183" class="btn btn-primary">Click Here</a>
     </div>
-    <div class="col-sm-4"> 
-      <p>LinkedIn</p>
-<a href="https://www.linkedin.com/in/kumar-saurav-586b3b190/">
-      <img src="linkedin.png" class="img-responsive margin" style="width:100%" alt="Image">
-</a>
+  </div>
+  <div class="card">
+    <img src="https://source.unsplash.com/1600x900/?Linkedin" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">LINKEDIN</h5>
+      <p class="card-text">Check out My Linkedin account</p>
+     
+ <a href="https://www.linkedin.com/in/kumar-saurav-586b3b190/" class="btn btn-primary">Click Here</a>
     </div>
-    <div class="col-sm-4"> 
-      <p>Instagram</p>
-<a href="https://www.instagram.com/">
-      <img src="insta.png" class="img-responsive margin" style="width:100%" alt="Image">
-</a>
+  </div>
+  <div class="card">
+    <img src="https://source.unsplash.com/1600x900/?Insta logo" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">INSTAGRAM</h5>
+      <p class="card-text">Check out My Insta account</p>
+   
+ <a href="https://www.instagram.com/" class="btn btn-primary">Click Here</a>
     </div>
   </div>
 </div>
-
-
-
-</body>
+  </body>
 </html>
